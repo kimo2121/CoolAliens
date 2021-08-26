@@ -45,16 +45,26 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className="slide-menu">
+        {menu && <div className="backdrop-back"></div>}
         <Menu className="slide-menu-icon" onClick={() => setMenu(true)} />
         {menu && (
           <div
-            onClick={() => setMenu(false)}
+            data-aos="slide-right"
             className={menu ? "menu-content active" : "menu-content"}
           >
-            <Close className={menu ? "close-icon" : "close-icon active"} />
-            <button className="link-btn">Mint</button>
-            <button className="link-btn">About Us</button>
-            <button className="link-btn">Price</button>
+            <Close
+              onClick={() => setMenu(false)}
+              className={menu ? "close-icon" : "close-icon active"}
+            />
+            <button onClick={() => setMenu(false)} className="link-btn">
+              Mint
+            </button>
+            <button onClick={() => setMenu(false)} className="link-btn">
+              About Us
+            </button>
+            <button onClick={() => setMenu(false)} className="link-btn">
+              Price
+            </button>
           </div>
         )}
       </div>
