@@ -1,0 +1,38 @@
+.road-map div:not(.head-line) {
+  width: 1128px;
+  border: 2px solid #26016f;
+  margin: 1vh auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.road-map div span {
+  color: #26016f;
+  font-size: 18px;
+  font-family: "Damias_Hands";
+}
+.road-map div p {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 1200px) {
+  .road-map div:not(.head-line) {
+    width: 928px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .road-map div:not(.head-line) {
+    width: 708px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .road-map div:not(.head-line) {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .road-map div:not(.head-line) {
+    width: 300px;
+  }
+}

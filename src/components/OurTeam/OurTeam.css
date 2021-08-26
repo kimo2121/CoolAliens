@@ -1,0 +1,37 @@
+.team-wrapper {
+  justify-content: center;
+  display: flex;
+}
+.team-wrapper img {
+  width: 230px;
+  height: 260px;
+}
+.team-wrapper div {
+  margin: 20px 50px;
+}
+
+.team-wrapper p {
+  margin-bottom: 0.5vh;
+  color: #26016f;
+  font-family: "Damias_Hands";
+  font-size: 20px;
+}
+.our-team {
+  padding-top: 15vh !important;
+}
+@media screen and (max-width: 990px) {
+  .team-wrapper {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .team-wrapper::after {
+    flex: 1 1 230px;
+    max-width: 330px;
+    content: "";
+  }
+}
+@media screen and (max-width: 659px) {
+  .team-wrapper::after {
+    content: none;
+  }
+}

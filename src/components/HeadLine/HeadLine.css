@@ -1,0 +1,13 @@
+.head-line h1 {
+  margin: 15vh 0;
+  font-size: 4.5rem;
+  font-family: "Damias_Hands";
+  color: #26016f;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+  .head-line h1 {
+    font-size: 2.1rem;
+  }
+}
