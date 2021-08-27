@@ -8,12 +8,11 @@
 .banner {
   background-image: url("/src/assets/images/banner.jpg");
   background-size: cover;
-  height: 80% !important;
+  height: 85% !important;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  /* top: -100px; */
   z-index: -1;
   width: 100%;
 }

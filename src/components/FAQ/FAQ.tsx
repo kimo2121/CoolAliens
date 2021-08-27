@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import HeadLine from "../HeadLine/HeadLine";
 import "./FAQ.css";
 import { IoIosArrowDown } from "react-icons/io";
+import TypographyComponent from "../Typography/Typography";
 const FAQ: React.FC = () => {
   const [state1, setstate1] = useState(false);
   const [state2, setstate2] = useState(false);
@@ -25,47 +26,47 @@ const FAQ: React.FC = () => {
   return (
     <div className="faq">
       <HeadLine headline="FAQ" />
-      <p
-        onClick={showHideDiv1}
+      <TypographyComponent
+        onClickFun={showHideDiv1}
         className={state1 ? "first-p opend" : "first-p"}
       >
         What is COOLALIENS <IoIosArrowDown />
-      </p>
+      </TypographyComponent>
       {state1 && (
-        <p className="toggle-p">
+        <TypographyComponent className="toggle-p">
           COOLALIENS IS A COLLECTION OF 10,000 UNIQUE DIGITAL NFT COLLECTIBLES
           CREATED USING A GENERATIVE ALGORITHM AND STORED ON THE ETHEREUM
           BLOCKCHAIN AS ERC-721 TOKENS. OWNING A COOLALIEN WILL GRANT YOU
           EXCLUSIVE ACCESS TO SPECIAL ROADMAP PERKS, SUCH AS EXCLUSIVE MERCH AND
           GIVEAWAYS ONLY FOR COOLALIENS HOLDERS.
-        </p>
+        </TypographyComponent>
       )}
-      <p
-        onClick={showHideDiv2}
+      <TypographyComponent
+        onClickFun={showHideDiv2}
         className={state2 ? "first-p opend" : "first-p"}
       >
         Where can I purchase a COOLALIENS NFT?
         <IoIosArrowDown />
-      </p>
+      </TypographyComponent>
       {state2 && (
-        <p className="toggle-p ">
+        <TypographyComponent className="toggle-p">
           YOU WILL ONLY BE ABLE TO PARTICIPATE IN THE PRESALE ON OUR OFFICIAL
           WEBSITE COOLALIENS.FUN. AFTER THE INITIAL MINTING PROCESS, YOU WILL BE
           ABLE TO TRADE YOUR COOLALIENS ON OPENSEA.
-        </p>
+        </TypographyComponent>
       )}
-      <p
+      <TypographyComponent
         className={state3 ? "first-p opend" : "first-p"}
-        onClick={showHideDiv3}
+        onClickFun={showHideDiv3}
       >
         What's the COOLALIENS furute?
         <IoIosArrowDown />
-      </p>
+      </TypographyComponent>
       {state3 && (
-        <p className="toggle-p">
+        <TypographyComponent className="toggle-p">
           WHO KNOWS? ​THEIR FUTURE IS YET TO BE DETERMINED, AND THEIR FATE WILL
           BE IN YOUR HANDS.
-        </p>
+        </TypographyComponent>
       )}
     </div>
   );

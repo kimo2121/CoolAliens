@@ -8,6 +8,7 @@ import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ButtonComponent from "../Button/Button";
 
 const Navbar: React.FC = () => {
   useEffect(() => {
@@ -27,13 +28,21 @@ const Navbar: React.FC = () => {
       <div className="nav-bar">
         <div className="nav-links">
           <h1 data-aos="zoom-in">CoolAliens</h1>
-          <button className="link-btn">Mint</button>
-          <button onClick={aboutDiv} className="link-btn">
-            About Us
-          </button>
-          <button onClick={priceDiv} className="link-btn">
-            Price
-          </button>
+          <ButtonComponent
+            onClickFun={() => priceDiv()}
+            className="link-btn"
+            label="Mint"
+          />
+          <ButtonComponent
+            onClickFun={() => aboutDiv()}
+            className="link-btn"
+            label="About Us"
+          />
+          <ButtonComponent
+            onClickFun={() => priceDiv()}
+            className="link-btn"
+            label="Price"
+          />
         </div>
         <div className="external-link">
           <a href="https://twitter.com/aliens_nft">
@@ -56,15 +65,17 @@ const Navbar: React.FC = () => {
               onClick={() => setMenu(false)}
               className={menu ? "close-icon" : "close-icon active"}
             />
-            <button onClick={() => setMenu(false)} className="link-btn">
-              Mint
-            </button>
-            <button onClick={() => setMenu(false)} className="link-btn">
-              About Us
-            </button>
-            <button onClick={() => setMenu(false)} className="link-btn">
-              Price
-            </button>
+            <ButtonComponent className="link-btn" label="Mint" />
+            <ButtonComponent
+              onClickFun={() => setMenu(false)}
+              className="link-btn"
+              label="About Us"
+            />
+            <ButtonComponent
+              onClickFun={() => setMenu(false)}
+              className="link-btn"
+              label="Price"
+            />
           </div>
         )}
       </div>

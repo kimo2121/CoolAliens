@@ -5,7 +5,8 @@ import "./ShuffleImage.css";
 import gif1 from "../../assets/images/gif1.png";
 import gif2 from "../../assets/images/gif2.png";
 import gif3 from "../../assets/images/gif3.png";
-import gif4 from "../../assets/images/gif4.png";
+import ButtonComponent from "../Button/Button";
+
 const data: Array<string> = [gif1, gif2, gif3];
 const ShuffleImage: React.FC = () => {
   const settings = {
@@ -41,7 +42,7 @@ const ShuffleImage: React.FC = () => {
           </div>
         ))}
       </Slider>
-      <button className="connect-wallet">Connect Wallet</button>
+      <ButtonComponent className="connect-wallet" label="Connect Wallet" />
     </div>
   );
 };

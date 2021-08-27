@@ -6,16 +6,6 @@
   padding: 20px;
 }
 
-.road-map div span {
-  color: #26016f;
-  font-size: 18px;
-  font-family: "Damias_Hands";
-}
-.road-map div p {
-  margin-bottom: 0;
-  font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-}
 @media screen and (max-width: 1200px) {
   .road-map div:not(.head-line) {
     width: 928px;

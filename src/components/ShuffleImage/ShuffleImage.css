@@ -6,24 +6,6 @@
   width: 350px;
 }
 
-.connect-wallet {
-  background-color: white;
-  border-radius: 10px;
-  width: fit-content;
-  color: #8463ed !important;
-  border-style: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 2px;
-  animation-duration: 1000ms;
-  padding: 15px 50px;
-  margin-top: 2vh;
-}
-.connect-wallet:hover {
-  background-color: #ab94f8;
-  cursor: pointer;
-}
 .img-container {
   object-fit: contain;
   width: 350px;
